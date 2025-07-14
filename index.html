@@ -1,1 +1,132 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="current-weather-container">
+      <header>
+        <form action="" class="search-form" id="search-form">
+          <input
+            type="text"
+            placeholder="Enter city.."
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-btn" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-information">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time"></span>,
+              <span id="weather-details"></span>
+              <br />
+              Humidity:
+              <strong class="weather-app-humidity" id="humidity">88%</strong>
+              Wind:
+              <strong class="weather-app-wind-speed" id="wind">
+                6.17km/h</strong
+              >
+            </p>
+          </div>
+          <div class="temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit" id="unit">°F</div>
+          </div>
+        </div>
+        <div class="weather-forcast">
+          <div class="weather-forcast-day">
+            <div class="weather-forcast-date">Fri</div>
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forcast-temperatures">
+              <div class="weather-forcast-temperature">
+                <strong>85°</strong>
+              </div>
+              <div class="weather-forcast-temperature">70°</div>
+            </div>
+          </div>
+          <div class="weather-forcast-day">
+            <div class="weather-forcast-date">Sat</div>
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forcast-temperatures">
+              <div class="weather-forcast-temperature">
+                <strong>85°</strong>
+              </div>
+              <div class="weather-forcast-temperature">70°</div>
+            </div>
+          </div>
+          <div class="weather-forcast-day">
+            <div class="weather-forcast-date">Sun</div>
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forcast-temperatures">
+              <div class="weather-forcast-temperature">
+                <strong>85°</strong>
+              </div>
+              <div class="weather-forcast-temperature">70°</div>
+            </div>
+          </div>
+          <div class="weather-forcast-day">
+            <div class="weather-forcast-date">Mon</div>
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forcast-temperatures">
+              <div class="weather-forcast-temperature">
+                <strong>85°</strong>
+              </div>
+              <div class="weather-forcast-temperature">70°</div>
+            </div>
+          </div>
+          <div class="weather-forcast-day">
+            <div class="weather-forcast-date">Tue</div>
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forcast-temperatures">
+              <div class="weather-forcast-temperature">
+                <strong>85°</strong>
+              </div>
+              <div class="weather-forcast-temperature">70°</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/LeaBee3002" target="_blank">Leah Moore</a
+          >, is open-sourced on
+          <a
+            href="https://github.com/LeaBee3002/weather-app-project"
+            target="_blank"
+            >GitHub</a
+          >
+          and hosted on
+          <a href="https://special-weather-app.netlify.app/" target="_blank"
+            >Netlify</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
